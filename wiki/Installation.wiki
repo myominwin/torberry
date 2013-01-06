@@ -14,6 +14,6 @@ Write image to SD card:
 
 ==Windows==
 
-You need [https://launchpad.net/win32-image-writer Win32DiskImager], just uncompress torberry.img.xz image (with 7z) and use with Win32DiskImager. Run as administrator.
+You need [https://launchpad.net/win32-image-writer Win32DiskImager], just uncompress torberry.img.xz image (with 7z) and use with Win32DiskImager . Run as administrator.
 
 Once you are done, you can boot torberry.
