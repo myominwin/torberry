@@ -1,12 +1,12 @@
-#summary torberry info
+#summary Torberry main info
 
 = Introduction =
 Torberry is a raspbian based Linux distribution ready to serve as a transparent proxy and DNS server.
 
 = Details =
 Main features:
-       - Raspbian based
-       - includes minimal packages + tor + tor-arm + dropbear
+ * Raspbian based
+ * includes minimal packages + tor + tor-arm + dropbear
 
 = Current bugs =
 DHCP is a must, if torberry node is not able to get an IP from a dhcp server it will hang forever. It will be corrected soon.
@@ -15,9 +15,11 @@ DHCP is a must, if torberry node is not able to get an IP from a dhcp server it 
 Client configuratión must be done manually. Two things that you have to change are gateway and dns servers. Both must be configured with raspberry's IP.
 
 In Linux you can:
+{{{
 route delete default gateway [your.current.gateway]
 route add default gateway [ip.of.raspberry]
 echo "nameserver [ip.of.raspberry]" > /etc/resolv.conf
+}}}
 
 = Protocols unsupported =
 *ICMP* is not supported.
