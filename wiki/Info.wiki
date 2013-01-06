@@ -19,13 +19,14 @@ Client configuratión must be done manually. Two things that you have to change 
 
 In Linux you can:
 {{{
-route delete default gateway [your.current.gateway]
-route add default gateway [ip.of.raspberry]
-echo "nameserver [ip.of.raspberry]" > /etc/resolv.conf
+sudo route delete default gateway [your.current.gateway]
+sudo route add default gateway [ip.of.raspberry]
+sudo echo "nameserver [ip.of.raspberry]" > /etc/resolv.conf
 }}}
 
-= Protocols unsupported =
+= Unsupported protocols =
 As this is basically a transparent + DNS proxy, there are network protocols that wont work as you would expect in a gateway.
 
 *ICMP* is not supported by tor.
+
 *UDP* is not supported by tor.
