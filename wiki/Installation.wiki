@@ -7,13 +7,15 @@
 ==Linux==
 
 Uncompress image:
- unxz torberry.img.xz
+
+` unxz torberry.img.xz` 
 
 Write image to SD card:
- dd bs=1M if=torberry.img of=/dev/mmcblk0
+
+` dd bs=1M if=torberry.img of=/dev/mmcblk0`
 
 ==Windows==
 
-You need [https://launchpad.net/win32-image-writer Win32DiskImager], just uncompress torberry.img.xz image (with 7z) and use with Win32DiskImager . Run as administrator.
+Image can be uncompressed with [http://www.7-zip.org/ 7-zip]. You will also need [https://launchpad.net/win32-image-writer Win32DiskImager], just use the uncompressed image with it. It has to be done as administrator.
 
 Once you are done, you can boot torberry.
