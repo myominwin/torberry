@@ -8,6 +8,9 @@ Main features:
  * Raspbian based
  * includes minimal packages + tor + tor-arm + dropbear
 
+= Installation =
+Torberry is installed as usual in Raspberry. You can read [http://code.google.com/p/torberry/wiki/Installation installation instructions]
+
 = Current bugs =
 DHCP is a must, if torberry node is not able to get an IP from a dhcp server it will hang forever. It will be corrected soon.
 
