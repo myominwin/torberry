@@ -25,4 +25,7 @@ echo "nameserver [ip.of.raspberry]" > /etc/resolv.conf
 }}}
 
 = Protocols unsupported =
-*ICMP* is not supported.
+As this is basically a transparent + DNS proxy, there are network protocols that wont work as you would expect in a gateway.
+
+*ICMP* is not supported by tor.
+*UDP* is not supported by tor.
